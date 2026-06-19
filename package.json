@@ -5,7 +5,7 @@
   "description": "AI-powered Gmail Intelligence Platform (single-service deployment: Express API + built React SPA)",
   "type": "module",
   "engines": {
-    "node": ">=20.19"
+    "node": ">=22"
   },
   "scripts": {
     "install:all": "npm install --prefix backend && npm install --prefix frontend",
