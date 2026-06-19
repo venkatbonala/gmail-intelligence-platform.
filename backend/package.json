@@ -5,8 +5,8 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "start": "node --max-http-header-size=81920 src/server.js",
+    "dev": "nodemon --exec \"node --max-http-header-size=81920 src/server.js\""
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",

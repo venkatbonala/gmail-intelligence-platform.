@@ -36,7 +36,7 @@ Built with **Google Gemini** (`gemini-3.1-flash-lite` for sync-time summarizatio
 ## Prerequisites
 
 Ensure you have the following installed and set up:
-1. **Node.js** (v18 or higher)
+1. **Node.js** (v22 or higher — Node 22 ships native WebSocket, which the Supabase client requires)
 2. **NPM** (v9 or higher)
 3. A **Supabase** account (Free tier is perfectly fine)
 4. A **Google Cloud Developer Console** project
@@ -170,7 +170,7 @@ This app deploys as **one service**: the Express backend serves both the JSON AP
 | Root directory | repository root (the folder with this README) |
 | Build command  | `npm run build`                        |
 | Start command  | `npm start`                            |
-| Node version   | **20.19+** (enforced via `engines` in root `package.json`) |
+| Node version   | **22+** (enforced via `engines` in root `package.json` and `.nvmrc`; Node 22 ships native WebSocket, required by the Supabase client) |
 | Health check   | `GET /health` → `{ "status": "ok" }`   |
 
 The platform injects a `PORT` env var automatically; the server binds to it (`process.env.PORT`).

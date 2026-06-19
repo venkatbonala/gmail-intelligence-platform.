@@ -5,6 +5,9 @@
 **/.env
 !.env.example
 
+# ---- Editor / tooling ----
+.claude/
+
 # ---- Dependencies ----
 node_modules/
 **/node_modules/
