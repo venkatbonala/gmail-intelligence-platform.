@@ -11,7 +11,8 @@ dotenv.config({ path: '../.env', override: true });
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
+  process.env.SUPABASE_SERVICE_ROLE_KEY,
+  { realtime: { mode: 'manual' } }
 );
 
 const __filename = fileURLToPath(import.meta.url);
