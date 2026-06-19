@@ -1,0 +1,17 @@
+{
+  "watch": ["src"],
+  "ext": "js,mjs,cjs,json",
+  "ignore": [
+    "debug.log",
+    "*.log",
+    "test_*.js",
+    "check_db.js",
+    "clean_summaries.js",
+    "cleanup_orphans.js",
+    "regenerate_summaries.js",
+    "reset_sync.js",
+    "scratch_check.js",
+    "trigger_sync.js",
+    "node_modules/"
+  ]
+}

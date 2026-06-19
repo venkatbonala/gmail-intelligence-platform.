@@ -1,0 +1,37 @@
+# ---- Secrets / environment ----
+.env
+.env.local
+.env.*.local
+**/.env
+!.env.example
+
+# ---- Dependencies ----
+node_modules/
+**/node_modules/
+
+# ---- Build output ----
+frontend/dist/
+dist/
+dist-ssr/
+
+# ---- Logs ----
+*.log
+logs/
+backend/debug.log
+backend/reclassify_ai.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- Scratch / one-off maintenance scripts (not part of the app) ----
+backend/_poll.mjs
+backend/_tmp_watch.mjs
+
+# ---- OS / editor ----
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.swp

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --check src/services/gmail.js)",
+      "Bash(sed \"s#'./src/services/gmail.js'#'/Users/venkatbonala/Desktop/antigravity gmail/backend/src/services/gmail.js'#\" /tmp/test_classify.mjs)",
+      "Bash(node ./_tmp_test_classify.mjs)",
+      "Bash(rm -f ./_tmp_test_classify.mjs)",
+      "Bash(rm -f ./_tmp_test_classify.mjs /tmp/test_classify.mjs)"
+    ]
+  }
+}
